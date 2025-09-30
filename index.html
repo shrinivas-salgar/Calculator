@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="clear" onclick="deleteDisplay('C')"  >C</button>
+      <button  onclick="goToDisplay('(')"  >(</button>
+      <button  onclick="goToDisplay(')')"  >)</button>
+      <button class="operator"  onclick="goToDisplay('/')"  >/</button>
+      <button  onclick="goToDisplay('7')" >7</button>
+      <button onclick="goToDisplay('8')"  >8</button>
+      <button  onclick="goToDisplay('9')" >9</button>
+      <button class="operator"  onclick="goToDisplay('x')" >×</button>
+      <button  onclick="goToDisplay('4')" >4</button>
+      <button  onclick="goToDisplay('5')" >5</button>
+      <button  onclick="goToDisplay('6')" >6</button>
+      <button class="operator" onclick="goToDisplay('-')"  >-</button>
+      <button  onclick="goToDisplay('1')" >1</button>
+      <button  onclick="goToDisplay('2')" >2</button>
+      <button  onclick="goToDisplay('3')" >3</button>
+      <button class="operator" onclick="goToDisplay('+')"  >+</button>
+      <button  onclick="goToDisplay('0')" >0</button>
+      <button  onclick="goToDisplay('.')" >.</button>
+      <button  onclick="backspace('⌫')" >⌫</button>
+      <button class="equals"  onclick="result('=')" >=</button>
+    </div>
+  </div>
+<script src="script.js"></script>
+  
+</body>
+</html>
